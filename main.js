@@ -8,7 +8,13 @@ let badWord = 'freaking';
 let count = 0;
 storyWords.forEach((word) => {
  count++;
-});
 
-console.log(count)
-//console.log(storyWords.join(' '));
+});
+ storyWords = storyWords.filter((word) => {
+ return word !== unnecessaryWord
+ });
+//console.log(count)
+storyWords = storyWords.map((word) => {
+  return word === misspelledWord  
+});
+console.log(storyWords.join(' '));
