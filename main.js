@@ -15,6 +15,15 @@ storyWords.forEach((word) => {
  });
 //console.log(count)
 storyWords = storyWords.map((word) => {
-  return word === misspelledWord  
+ if (word === misspelledWord) {
+  return 'beautifull'
+ } else { return word }
 });
-console.log(storyWords.join(' '));
+
+badWordIndex = storyWords.findIndex((word) => {
+return word === badWord;
+});
+
+ storyWords[78] ='really'
+ console.log(badWordIndex);
+ console.log(storyWords.join(' '));
