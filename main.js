@@ -5,5 +5,10 @@ let storyWords = story.split(' ');
 let unnecessaryWord = 'literally';
 let misspelledWord = 'beautifull';
 let badWord = 'freaking';
+let count = 0;
+storyWords.forEach((word) => {
+ count++;
+});
 
-console.log(storyWords.join(''));
+console.log(count)
+//console.log(storyWords.join(' '));
